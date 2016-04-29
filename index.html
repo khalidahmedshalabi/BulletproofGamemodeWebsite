@@ -152,12 +152,12 @@
 		
 		<section id="WhySection" style="width:100%; height:100%;">
 			<div class="Navigator">
-				<div id="DefaultNavButton" class="NavButtons" onclick="OnNavButtonClicked(this); LoadContent('page_competition.html');">Competition&nbsp;<span class="NavButtonIcon fa fa-trophy"></span></div>
-				<div class="NavButtons" onclick="OnNavButtonClicked(this); LoadContent('page_familiarity.html');">Familiarity&nbsp;<span class="NavButtonIcon fa fa-users"></span></div>
-				<div class="NavButtons" onclick="OnNavButtonClicked(this); LoadContent('page_security.html');">Security&nbsp;<span class="NavButtonIcon fa fa-lock"></span></div>
-				<div class="NavButtons" onclick="OnNavButtonClicked(this); LoadContent('page_purity.html');">Purity&nbsp;<span class="NavButtonIcon fa fa-eye"></span></div>
-				<div class="NavButtons" onclick="OnNavButtonClicked(this); LoadContent('page_support.html');">Support&nbsp;<span class="NavButtonIcon fa fa-ambulance"></span></div>
-				<div class="NavButtons" onclick="OnNavButtonClicked(this); LoadContent('page_innovation.html');">Innovation&nbsp;<span class="NavButtonIcon fa fa-diamond"></span></div>
+				<div id="DefaultNavButton" class="NavButtons" onclick="LoadContent('page_competition.html');">Competition&nbsp;<span class="NavButtonIcon fa fa-trophy"></span></div>
+				<div class="NavButtons" onclick="LoadContent('page_familiarity.html');">Familiarity&nbsp;<span class="NavButtonIcon fa fa-users"></span></div>
+				<div class="NavButtons" onclick="LoadContent('page_security.html');">Security&nbsp;<span class="NavButtonIcon fa fa-lock"></span></div>
+				<div class="NavButtons" onclick="LoadContent('page_purity.html');">Purity&nbsp;<span class="NavButtonIcon fa fa-eye"></span></div>
+				<div class="NavButtons" onclick="LoadContent('page_support.html');">Support&nbsp;<span class="NavButtonIcon fa fa-ambulance"></span></div>
+				<div class="NavButtons" onclick="LoadContent('page_innovation.html');">Innovation&nbsp;<span class="NavButtonIcon fa fa-diamond"></span></div>
 			</div>
 			
 			<br>
@@ -165,32 +165,8 @@
 			<div class="Content">
 				Loading...
 			</div>
-			
-			<script>
-			$("#DefaultNavButton").trigger("click");
-			
-			function LoadContent(page)
-			{
-				$(".Content").load(page);
-			}
-			function OnNavButtonClicked(elem)
-			{
-				$(".NavButtons").removeClass("NavButtonsClicked");
-				
-				$(elem).addClass("NavButtonsClicked");
-			}
-			</script>
 		</section>
 	</body>
 	
-	<script>
-	$("nav").find("a").click(function(e) 
-	{
-		e.preventDefault();
-		var section = $(this).attr("href");
-		$("html, body").animate({
-			scrollTop: $(section).offset().top
-		});
-	});
-	</script>
+	<script src="resources/js/main.js"></script>
 </html>
