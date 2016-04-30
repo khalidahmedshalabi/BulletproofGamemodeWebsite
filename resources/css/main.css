@@ -7,7 +7,7 @@ body
 {
 	height:100%; 
 	width:100%; 
-	background-image: url('resources/img/sa-mp-006.jpg'); 
+	background-image: url('../img/sa-mp-006.jpg'); 
 	background-size: cover; 
 	background-repeat: no-repeat;
 }
