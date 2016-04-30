@@ -13,9 +13,6 @@ $("nav").find("a").click(function(e)
 		scrollTop: $(section).offset().top
 	});
 });
-
-// Make the user click the default nav button when the main page loads so that external sub pages load
-$("#DefaultNavButton").trigger("click");
 	
 // Load external sub pages
 function LoadContent(page)
@@ -74,3 +71,8 @@ $(".NavButtons").click
 		ScrollToTopOfContent();
 	}
 );
+
+// Load default sub page
+$(".NavButtons").removeClass("NavButtonsClicked");
+$("#DefaultNavButton").addClass("NavButtonsClicked");
+LoadContent("page_competition.html");
