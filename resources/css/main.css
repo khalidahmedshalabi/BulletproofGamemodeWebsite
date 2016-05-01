@@ -56,6 +56,26 @@ body
 	background-color:green;
 	border-bottom-color:black;
 }
+
+.LeagueButton
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:80%;
+	
+	padding:2%;
+	background-color:black;
+	border-bottom-style:solid;
+	border-bottom-color:#6495ED;
+	border-bottom-width:thick;
+	color:rgba(255, 255, 255, 0.9);
+	text-decoration:none;
+}
+.LeagueButton:hover
+{
+	background-color:#6495ED;
+	border-bottom-color:black;
+}
+
 .WhyButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
