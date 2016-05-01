@@ -1,0 +1,89 @@
+body
+{
+	background-color:black;
+	margin:0;
+	padding:0;
+}
+
+.MainSections
+{
+	float: left;
+	height: 100%;
+	width: 50%;
+	background-color:#000000;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:white;
+	text-align:center;
+	font-size:100%;
+}
+
+.Blurry
+{
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+
+}
+
+.MainSectionTitle
+{
+	background-color:transparent;
+	margin:0 auto;
+	width:50%;
+	border-bottom-style:solid;
+	border-bottom-color:white;
+	border-bottom-width:thin;
+}
+
+.DownloadServer
+{
+	font-weight:bold;
+	padding:2%;
+	background-color:black;
+	border-bottom-style:solid;
+	border-bottom-color:green;
+	border-bottom-width:thick;
+	color:rgba(255, 255, 255, 0.9);
+	text-decoration:none;
+}
+.DownloadServer:hover
+{
+	background-color:green;
+	border-bottom-color:black;
+}
+
+.DownloadSourceCode
+{
+	font-weight:bold;
+	padding:2%;
+	background-color:black;
+	border-bottom-style:solid;
+	border-bottom-color:#EB4E00;
+	border-bottom-width:thick;
+	color:rgba(255, 255, 255, 0.9);
+	text-decoration:none;
+}
+.DownloadSourceCode:hover
+{
+	background-color:#EB4E00;
+	border-bottom-color:black;
+}
+
+.ViewSourceCode
+{
+	font-weight:bold;
+	padding:2%;
+	background-color:black;
+	border-bottom-style:solid;
+	border-bottom-color:#06339C;
+	border-bottom-width:thick;
+	color:rgba(255, 255, 255, 0.9);
+	text-decoration:none;
+}
+.ViewSourceCode:hover
+{
+	background-color:#06339C;
+	border-bottom-color:black;
+}
