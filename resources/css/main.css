@@ -11,6 +11,60 @@ body
 	background-size: cover; 
 	background-repeat: no-repeat;
 }
+
+.CommentsContainer
+{
+	display:none;
+	position:absolute;
+	bottom:0;
+	height:100%;
+	width: 100%;
+	background-color:rgba(0, 0, 0, 0.95);
+}
+
+.Comments
+{
+	text-align:center;
+	color:white;
+	height:70%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	background-color:rgba(11, 11, 11, 0.6);
+}
+
+.GoDownload
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:white; 
+	margin-left:2%;
+	/*position:absolute; 
+	bottom:7%; 
+	right:3%;*/
+	font-size:150%;
+	cursor:default;
+}
+
+.GoComments
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:white; 
+	position:absolute; 
+	bottom:7%; 
+	right:3%; 
+	font-size:130%;
+	cursor:default;
+}
+
+.GoComments:hover
+{
+	text-decoration:underline;
+}
+
+.GoDownload:hover
+{
+	text-decoration:underline;
+}
+
 .MainText
 {
 	font-weight:bold;
