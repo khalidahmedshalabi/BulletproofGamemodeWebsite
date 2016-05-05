@@ -52,10 +52,22 @@ body
 	font-family: 'Open Sans Condensed', sans-serif;
 	color:white; 
 	position:absolute; 
-	bottom:7%; 
+	bottom:9%; 
 	right:3%; 
 	font-size:130%;
 	cursor:default;
+}
+
+.GoEmail
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:white; 
+	position:absolute; 
+	bottom:3%; 
+	right:3%; 
+	font-size:130%;
+	cursor:default;
+	text-decoration:none;
 }
 
 .GoComments:hover
@@ -64,6 +76,11 @@ body
 }
 
 .GoDownload:hover
+{
+	text-decoration:underline;
+}
+
+.GoEmail:hover
 {
 	text-decoration:underline;
 }
