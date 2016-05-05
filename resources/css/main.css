@@ -24,12 +24,15 @@ body
 
 .Comments
 {
+	display:block;
 	text-align:center;
 	color:white;
-	height:70%;
-	overflow-y:scroll;
+	margin:0 auto;
+	height:75%;
+	width:75%;
+	overflow-y:auto;
 	overflow-x:hidden;
-	background-color:rgba(11, 11, 11, 0.6);
+	background-color:rgba(11, 11, 11, 0.95);
 }
 
 .GoDownload
