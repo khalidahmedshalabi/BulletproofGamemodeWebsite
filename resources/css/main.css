@@ -41,7 +41,7 @@ body
 .DownloadButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:80%;
+	font-size:55%;
 	
 	padding:2%;
 	background-color:black;
@@ -60,7 +60,7 @@ body
 .LeagueButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:80%;
+	font-size:40%;
 	
 	padding:2%;
 	background-color:black;
@@ -86,7 +86,7 @@ body
 	border-bottom-width:thick;
 	color:rgba(255, 255, 255, 0.8);
 	text-decoration:none;
-	font-size:55%;
+	font-size:40%;
 	cursor:pointer;
 }
 .WhyButton:hover
