@@ -25,8 +25,8 @@ function LoadContent(page)
 var IsNavigatorInFixedPos = false; // A variable to indicate whether the nav bar is placed in a fixed position or not
 var NavigatorFirstTopOffset = $(".Navigator").offset().top; // Initialize nav position
 
-// On scroll event...
-$(window).scroll(function()
+// Fix nav bar position based on scrolling value when window is scrolled
+function FixNavBarPosition()
 {
 	// Check if the user has scrolled enough. In other words, the nav bar is not visible anymore in viewpoint.
 	if($(window).scrollTop() > NavigatorFirstTopOffset)
@@ -48,7 +48,31 @@ $(window).scroll(function()
 		$(".Navigator").css("position", "static");
 		IsNavigatorInFixedPos = false;
 	}
-})
+}
+
+// Fix nav bar position based on window size when window is resized
+$(window).resize
+(
+	function ()
+	{
+		// If nav bar is in a fixed position
+		if(IsNavigatorInFixedPos)
+		{
+			// Return it to its default position
+			$(".Navigator").css("position", "static");
+			IsNavigatorInFixedPos = false;
+			
+			// Store its new static position
+			NavigatorFirstTopOffset = $(".Navigator").offset().top;
+			
+			// Fix position
+			FixNavBarPosition();
+		}
+	}
+);
+
+// On scroll event...
+$(window).scroll(function () { FixNavBarPosition(); });
 
 // Set window scroll value to the top of content page so that user can read everything clearly
 function ScrollToTopOfContent()
