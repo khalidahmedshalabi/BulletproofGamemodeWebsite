@@ -41,9 +41,9 @@ body
 .DownloadButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:55%;
+	font-size:65%;
 	
-	padding:2%;
+	padding:1%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:green;
@@ -60,9 +60,9 @@ body
 .LeagueButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:40%;
+	font-size:50%;
 	
-	padding:2%;
+	padding:1%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:#6495ED;
@@ -79,14 +79,14 @@ body
 .WhyButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	padding:2%;
+	padding:1%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:red;
 	border-bottom-width:thick;
 	color:rgba(255, 255, 255, 0.8);
 	text-decoration:none;
-	font-size:40%;
+	font-size:50%;
 	cursor:pointer;
 }
 .WhyButton:hover
