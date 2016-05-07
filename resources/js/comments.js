@@ -9,6 +9,7 @@ $(".GoComments").click(
 				$(".CommentsContainer").fadeIn(500);
 			}
 		);
+		$("body").animate({scrollTop:0}, "300");
 	}
 );
 

@@ -47,26 +47,30 @@ body
 	cursor:default;
 }
 
-.GoComments
+.FeedbackButtonsContainer
 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color:white; 
-	position:absolute; 
+	font-size:90%;
+	cursor:default;
+	position:fixed; 
 	bottom:9%; 
 	right:3%; 
-	font-size:130%;
-	cursor:default;
+	padding:0.5%;
+	border-bottom-style:solid;
+	border-bottom-color:#BBBBBB;
+	border-bottom-width:thin;
+	background-color:rgba(0,0,0, 0.7);
 }
 
-.GoEmail
+.FeedbackButtonsContainer:hover
 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	background-color:rgba(0,0,0, 0.95);
+}
+
+.GoGoogleForms
+{
 	color:white; 
-	position:absolute; 
-	bottom:3%; 
-	right:3%; 
-	font-size:130%;
-	cursor:default;
 	text-decoration:none;
 }
 
@@ -80,14 +84,13 @@ body
 	text-decoration:underline;
 }
 
-.GoEmail:hover
+.GoGoogleForms:hover
 {
 	text-decoration:underline;
 }
 
 .MainText
 {
-	font-weight:bold;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:240%;
 	color:white;
@@ -115,9 +118,9 @@ body
 .DownloadButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:65%;
+	font-size:60%;
 	
-	padding:1%;
+	padding:0.7%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:green;
@@ -134,9 +137,9 @@ body
 .LeagueButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:50%;
+	font-size:45%;
 	
-	padding:1%;
+	padding:0.7%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:#6495ED;
@@ -153,14 +156,14 @@ body
 .WhyButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	padding:1%;
+	padding:0.7%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:red;
 	border-bottom-width:thick;
 	color:rgba(255, 255, 255, 0.8);
 	text-decoration:none;
-	font-size:50%;
+	font-size:45%;
 	cursor:pointer;
 }
 .WhyButton:hover
