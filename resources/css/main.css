@@ -3,13 +3,24 @@ body
 	margin:0;
 }
 
+#MainSectionImage
+{
+	height:100%;
+	width:100%;
+	background-image: url('../img/sa-mp-006.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	filter: blur(1px);
+}
+
 #MainSection
 {
-	height:100%; 
-	width:100%; 
-	background-image: url('../img/sa-mp-006.jpg'); 
-	background-size: cover; 
-	background-repeat: no-repeat;
+	height:100%;
+	width:100%;
 }
 
 .CommentsContainer
@@ -38,10 +49,10 @@ body
 .GoDownload
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	color:white; 
+	color:white;
 	margin-left:2%;
-	/*position:absolute; 
-	bottom:7%; 
+	/*position:absolute;
+	bottom:7%;
 	right:3%;*/
 	font-size:150%;
 	cursor:default;
@@ -50,12 +61,12 @@ body
 .FeedbackButtonsContainer
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	color:white; 
+	color:white;
 	font-size:90%;
 	cursor:default;
-	position:fixed; 
-	bottom:9%; 
-	right:3%; 
+	position:fixed;
+	bottom:9%;
+	right:3%;
 	padding:0.5%;
 	border-bottom-style:solid;
 	border-bottom-color:#BBBBBB;
@@ -70,7 +81,7 @@ body
 
 .GoGoogleForms
 {
-	color:white; 
+	color:white;
 	text-decoration:none;
 }
 
@@ -119,7 +130,7 @@ body
 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:60%;
-	
+
 	padding:0.7%;
 	background-color:black;
 	border-bottom-style:solid;
@@ -138,7 +149,7 @@ body
 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:45%;
-	
+
 	padding:0.7%;
 	background-color:black;
 	border-bottom-style:solid;
