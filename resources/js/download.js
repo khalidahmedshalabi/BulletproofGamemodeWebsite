@@ -22,7 +22,8 @@ $(".MainSections").hover
 		$(".MainSections").animate
 		(
 			{
-				width: ($(window).width() * 0.3)
+				width: ($(window).width() * 0.3),
+				fontSize: "100%"
 			},
 			{
 				queue: false,
@@ -31,11 +32,12 @@ $(".MainSections").hover
 		);
 		$(".MainSections").css("background-color", "#000000");
 		$(".MainSections").addClass("Blurry");
-		
+
 		$(this).animate
 		(
 			{
-				width: ($(window).width() * 0.7)
+				width: ($(window).width() * 0.7),
+				fontSize: "120%"
 			},
 			{
 				queue: false,

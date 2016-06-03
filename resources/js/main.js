@@ -24,13 +24,11 @@ function FixFeedbackContainer()
 		{
 			$(".FeedbackButtonsContainer").animate(
 				{
-					right:0,
-					bottom:0,
-					fontSize:"70%"
+					fontSize:"80%"
 				},
 				{
 					queue: false,
-					duration: 1000
+					duration: 700
 				}
 			);
 			FeedbackContainerScrolled = true;
@@ -40,13 +38,11 @@ function FixFeedbackContainer()
 	{
 		$(".FeedbackButtonsContainer").animate(
 			{
-				right:"3%",
-				bottom:"9%",
-				fontSize:"90%"
+				fontSize:"100%"
 			},
 			{
 				queue: false,
-				duration: 1000
+				duration: 700
 			}
 		);
 		FeedbackContainerScrolled = false;

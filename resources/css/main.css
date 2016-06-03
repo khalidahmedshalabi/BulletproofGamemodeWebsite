@@ -62,11 +62,11 @@ body
 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color:white;
-	font-size:90%;
+	font-size:100%;
 	cursor:default;
 	position:fixed;
-	bottom:9%;
-	right:3%;
+	right:0%;
+	bottom:0%;
 	padding:0.5%;
 	border-bottom-style:solid;
 	border-bottom-color:#BBBBBB;
@@ -129,7 +129,7 @@ body
 .DownloadButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:60%;
+	font-size:70%;
 
 	padding:0.7%;
 	background-color:black;
@@ -148,7 +148,7 @@ body
 .LeagueButton
 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:45%;
+	font-size:55%;
 
 	padding:0.7%;
 	background-color:black;
@@ -174,7 +174,7 @@ body
 	border-bottom-width:thick;
 	color:rgba(255, 255, 255, 0.8);
 	text-decoration:none;
-	font-size:45%;
+	font-size:55%;
 	cursor:pointer;
 }
 .WhyButton:hover
@@ -192,12 +192,13 @@ body
 }
 .NavButtons
 {
+	font-weight: bold;
 	cursor:default;
 	color:white;
 	float:left;
 	width:16.666666666666666666666666666667%;
 	height:100%;
-	font-size:150%;
+	font-size:160%;
 }
 .NavButtonsClicked
 {
@@ -208,7 +209,7 @@ body
 }
 .NavButtons:hover
 {
-	background-color:#222222;
+	background-color:#111111;
 	border-bottom-style:solid;
 	border-bottom-color:yellow;
 	border-bottom-width:thick;

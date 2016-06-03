@@ -31,6 +31,7 @@ body
 {
 	background-color:transparent;
 	margin:0 auto;
+	margin-top: 5%;
 	width:50%;
 	border-bottom-style:solid;
 	border-bottom-color:white;
@@ -40,7 +41,8 @@ body
 .DownloadServer
 {
 	font-weight:bold;
-	padding:2%;
+	font-size: 140%;
+	padding:1%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:green;
@@ -57,7 +59,7 @@ body
 .DownloadSourceCode
 {
 	font-weight:bold;
-	padding:2%;
+	padding:1%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:#EB4E00;
@@ -74,7 +76,7 @@ body
 .ViewSourceCode
 {
 	font-weight:bold;
-	padding:2%;
+	padding:1%;
 	background-color:black;
 	border-bottom-style:solid;
 	border-bottom-color:#06339C;
