@@ -14,21 +14,26 @@ $("nav").find("a").click(function(e)
 	});
 });
 
-var FeedbackContainerScrolled = false;
+var FeedbackContainerScrolled = false, FeedbackContainerAnimating = false;
 
 function FixFeedbackContainer()
 {
+	if(FeedbackContainerAnimating)
+		return;
+
 	if($(window).scrollTop() > $(window).innerHeight() * 0.08)
 	{
 		if(!FeedbackContainerScrolled)
 		{
+			FeedbackContainerAnimating = true
 			$(".FeedbackButtonsContainer").animate(
 				{
 					fontSize:"80%"
 				},
 				{
 					queue: false,
-					duration: 700
+					duration: 700,
+					complete: function () { FeedbackContainerAnimating = false; }
 				}
 			);
 			FeedbackContainerScrolled = true;
@@ -36,13 +41,15 @@ function FixFeedbackContainer()
 	}
 	else if(FeedbackContainerScrolled)
 	{
+		FeedbackContainerAnimating = true
 		$(".FeedbackButtonsContainer").animate(
 			{
 				fontSize:"100%"
 			},
 			{
 				queue: false,
-				duration: 700
+				duration: 700,
+				complete: function () { FeedbackContainerAnimating = false; }
 			}
 		);
 		FeedbackContainerScrolled = false;
